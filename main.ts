@@ -6,6 +6,7 @@ import { parseArgs } from "jsr:@std/cli";
 
 const KEY = "LSB_"
 defaultLoggerEnv.minLogLevel = LOG_LEVEL_DEBUG;
+console.log("Reading config...");
 const configFile = Deno.env.get(`${KEY}CONFIG`) || "./dat/config.json";
 
 console.log("LiveSync Bridge is now starting...");
