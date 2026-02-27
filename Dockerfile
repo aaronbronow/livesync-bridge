@@ -7,7 +7,7 @@ VOLUME /app/data
 
 COPY . .
 
-RUN deno install --allow-net --allow-import
+RUN deno install --allow-net --allow-import --global
 
 CMD [ "deno", "task", "run" ]
 
